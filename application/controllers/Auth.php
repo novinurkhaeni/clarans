@@ -102,7 +102,7 @@ class Auth extends CI_Controller
             ];
 
             //siapkan token
-            $token = base64_encode(random_bytes(32));//encode utk konversi karakter. 
+            $token = base64_encode(random_bytes(32)); //encode utk konversi karakter. 
             $user_token = [
                 'email' => $email,
                 'token' => $token,
@@ -125,7 +125,7 @@ class Auth extends CI_Controller
             'protocol'  => 'smtp',
             'smtp_host' => 'ssl://smtp.googlemail.com',
             'smtp_user' => 'novinurkhaeni.1@gmail.com',
-            'smtp_pass' => 'aduhlupanih',
+            'smtp_pass' => 'passwordemail',
             'smtp_port' => 465,
             'mailtype'  => 'html',
             'charset'   => 'utf-8',
